@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viliam Balara | 3D Artist & Web Developer</title>
+    <title>Viliam Balara | Data Scientist & 3D Artist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cursor follower -->
-    <div class="cursor-follower"></div>
-    
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-logo">VB</div>
+        <a href="#" class="nav-logo">VB<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#3d-work" class="nav-link">3D Work</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#web-projects" class="nav-link">Web Projects</a></li>
+            <li><a href="#3d-work" class="nav-link">3D Work</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank" class="nav-cta">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
         <div class="nav-hamburger">
             <span></span>
             <span></span>
@@ -33,233 +34,164 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="grid-lines"></div>
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
-        </div>
         <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">
-                    <span class="name-line">Viliam</span>
-                    <span class="name-line">Balara</span>
-                </h1>
-                <div class="hero-roles">
-                    <span class="role-text"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">Crafting digital experiences through 3D art and web development</p>
-                <div class="hero-cta">
-                    <a href="#3d-work" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Viliam Balara</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
             </div>
-            <div class="hero-visual">
-                <div class="atom-container">
-                    <!-- Glowing Core -->
-                    <div class="atom-core">
-                        <div class="core-inner"></div>
-                    </div>
-                    <!-- Orbital Rings -->
-                    <div class="orbit orbit-1">
-                        <div class="electron"></div>
-                    </div>
-                    <div class="orbit orbit-2">
-                        <div class="electron"></div>
-                    </div>
-                    <div class="orbit orbit-3">
-                        <div class="electron"></div>
-                    </div>
-                    <!-- Floating Particles -->
-                    <div class="particle particle-1"></div>
-                    <div class="particle particle-2"></div>
-                    <div class="particle particle-3"></div>
-                    <div class="particle particle-4"></div>
-                    <div class="particle particle-5"></div>
-                    <div class="particle particle-6"></div>
+            <p class="hero-description">
+                Data Scientist passionate about turning complex data into actionable insights. 
+                Also a 3D artist crafting digital experiences in my creative time.
+            </p>
+            <div class="hero-buttons">
+                <a href="#experience" class="btn btn-primary">
+                    <span>View Experience</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank" class="btn btn-outline">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>Connect on LinkedIn</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Companies</span>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+        <div class="hero-visual">
+            <div class="hero-image-wrapper">
+                <img src="UAZ_2206_green-white_folding-unfolded_force_10.png" alt="UAZ 2206 3D Model" class="hero-image">
+                <div class="image-glow"></div>
             </div>
-            <span>Scroll Down</span>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Me</span>
-                <h2 class="section-title">Who I Am</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img src="R1-08292-0033.JPG" alt="Viliam Balara in nature" class="about-photo">
-                        <div class="image-decoration"></div>
-                    </div>
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Bridging Data & Creativity</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3>Data Science</h3>
+                    <p>Transforming raw data into meaningful insights using Python, machine learning, and statistical analysis.</p>
                 </div>
-                <div class="about-text">
-                    <p class="about-intro">I'm a passionate <strong>3D Artist</strong> and <strong>Web Developer</strong> based in Prešov, Slovakia.</p>
-                    <p>With a keen eye for detail and a love for creating immersive digital experiences, I blend artistic vision with technical expertise. My journey spans from modeling intricate 3D objects to building modern, responsive websites.</p>
-                    <p>Whether it's crafting realistic weapon models, designing concept vehicles, or developing interactive web applications, I bring creativity and precision to every project.</p>
-                    <div class="skills-container">
-                        <h3>My Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fa-solid fa-cube"></i></div>
-                                <span>3D Modeling</span>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
-                                <span>Web Development</span>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
-                                <span>Texturing</span>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fa-solid fa-image"></i></div>
-                                <span>Rendering</span>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                                <span>Concept Design</span>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                                <span>Responsive Design</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h3>3D Art</h3>
+                    <p>Creating stunning 3D models and visualizations using Blender, 3ds Max, and Substance Painter.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>App Creation</h3>
+                    <p>Building web applications and digital tools that solve real-world problems.</p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Langchain</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">Tableau</span>
+                    <span class="tech-tag">Blender</span>
+                    <span class="tech-tag">3ds Max</span>
+                    <span class="tech-tag">Substance Painter</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3D Work Section -->
-    <section id="3d-work" class="work-section">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="section-title">3D Artwork</h2>
-                <p class="section-subtitle">A showcase of my 3D modeling projects</p>
+            <div class="section-label">Career</div>
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="company-grid">
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="cat_logo.png" alt="Caterpillar Logo">
+                    </div>
+                    <div class="company-details">
+                        <h3>Data Scientist</h3>
+                        <span class="company-name">Caterpillar</span>
+                        <span class="company-year">2025 - Present</span>
+                    </div>
+                </div>
+                
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="Schaeffler_logo.png" alt="Schaeffler Logo">
+                    </div>
+                    <div class="company-details">
+                        <h3>Data Analyst</h3>
+                        <span class="company-name">Schaeffler</span>
+                        <span class="company-year">2022 - 2023</span>
+                    </div>
+                </div>
+                
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="Javorina_logo.webp" alt="Javorina Logo">
+                    </div>
+                    <div class="company-details">
+                        <h3>R&D Engineer</h3>
+                        <span class="company-name">Javorina</span>
+                        <span class="company-year">2023 - 2025</span>
+                    </div>
+                </div>
             </div>
-            <div class="work-grid">
-                <a href="https://www.artstation.com/artwork/3EDOaD" target="_blank" class="work-card" data-category="vehicle">
-                    <div class="card-image">
-                        <img src="https://cdna.artstation.com/p/assets/images/images/088/666/338/medium/viliam-balara-front-view-1.jpg?1748886997" alt="Concept Three-Wheeler" loading="lazy">
-                        <div class="card-overlay">
-                            <span class="view-project">View on ArtStation →</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Concept Three-Wheeler</h3>
-                        <p>3D Vehicle Design • Blender</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.artstation.com/artwork/5vZ3lA" target="_blank" class="work-card" data-category="organic">
-                    <div class="card-image">
-                        <img src="https://cdnb.artstation.com/p/assets/images/images/065/398/619/medium/viliam-balara-img-20230622-185405-1.jpg?1690282117" alt="Raven Skull" loading="lazy">
-                        <div class="card-overlay">
-                            <span class="view-project">View on ArtStation →</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Raven Skull</h3>
-                        <p>3D Print • 3ds Max</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.artstation.com/artwork/xDeXbR" target="_blank" class="work-card" data-category="robot">
-                    <div class="card-image">
-                        <img src="https://cdnb.artstation.com/p/assets/images/images/065/402/925/medium/viliam-balara-render-1.jpg?1690290073" alt="Spiderbot" loading="lazy">
-                        <div class="card-overlay">
-                            <span class="view-project">View on ArtStation →</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Spiderbot</h3>
-                        <p>Mecha • Substance Painter</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.artstation.com/artwork/Poe4Yr" target="_blank" class="work-card" data-category="weapon">
-                    <div class="card-image">
-                        <img src="https://cdna.artstation.com/p/assets/images/images/028/496/984/medium/viliam-balara-04.jpg?1594657467" alt="Walther PPK" loading="lazy">
-                        <div class="card-overlay">
-                            <span class="view-project">View on ArtStation →</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Walther PPK</h3>
-                        <p>Weapon • 3ds Max & Substance</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.artstation.com/artwork/8l9qDw" target="_blank" class="work-card" data-category="weapon">
-                    <div class="card-image">
-                        <img src="https://cdnb.artstation.com/p/assets/images/images/026/217/903/medium/viliam-balara-01.jpg?1588193406" alt="AKM Assault Rifle" loading="lazy">
-                        <div class="card-overlay">
-                            <span class="view-project">View on ArtStation →</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>AKM Assault Rifle</h3>
-                        <p>Weapon • 3ds Max & Substance</p>
-                    </div>
-                </a>
-                
-                <a href="https://www.artstation.com/artwork/Q6mod" target="_blank" class="work-card" data-category="vehicle">
-                    <div class="card-image">
-                        <img src="https://cdna.artstation.com/p/assets/images/images/007/007/598/medium/viliam-balara-vespa-5.jpg?1502974385" alt="1960's Scooter" loading="lazy">
-                        <div class="card-overlay">
-                            <span class="view-project">View on ArtStation →</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>1960's Scooter</h3>
-                        <p>Vehicle • Fusion 360</p>
-                    </div>
-                </a>
-            </div>
-            <div class="artstation-link">
-                <a href="https://www.artstation.com/vilo34" target="_blank" class="btn btn-outline">
-                    View All on ArtStation →
+            
+            <div class="experience-cta">
+                <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank" class="btn btn-outline">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>View Full Details on LinkedIn</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Web Projects Section -->
-    <section id="web-projects" class="projects-section">
+    <section id="web-projects" class="web-projects">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Web Development</span>
-                <h2 class="section-title">Web Projects</h2>
-                <p class="section-subtitle">Websites and web applications I've built</p>
-            </div>
+            <div class="section-label">Web Development</div>
+            <h2 class="section-title">Web Projects</h2>
+            <p class="section-description">Websites and web applications I've built</p>
+            
             <div class="projects-grid">
                 <a href="https://offroad-legends.com/" target="_blank" class="project-card">
                     <div class="project-number">01</div>
                     <div class="project-image">
                         <img src="https://api.microlink.io/?url=https://offroad-legends.com/&screenshot=true&meta=false&embed=screenshot.url" alt="Offroad Legends Website" loading="lazy">
+                        <div class="project-overlay">
+                            <span>Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>Offroad Legends</h3>
                         <p>Offroad Adventures Website</p>
                         <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </a>
@@ -268,19 +200,22 @@
                     <div class="project-number">02</div>
                     <div class="project-image">
                         <img src="https://api.microlink.io/?url=https://viliam34.github.io/gal-web/&screenshot=true&meta=false&embed=screenshot.url" alt="Modulmax Website" loading="lazy">
+                        <div class="project-overlay">
+                            <span>Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>Modulmax</h3>
                         <p>Business Website</p>
                         <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </a>
                 
-                <div class="project-card placeholder-card">
+                <div class="project-card placeholder">
                     <div class="project-number">03</div>
                     <div class="project-image">
                         <div class="placeholder-content">
@@ -289,50 +224,12 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Web Development Project</p>
+                        <h3>New Project</h3>
+                        <p>In Development</p>
                         <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card placeholder-card">
-                    <div class="project-number">04</div>
-                    <div class="project-image">
-                        <div class="placeholder-content">
-                            <span class="placeholder-icon">⚡</span>
-                            <span class="coming-soon">Coming Soon</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Web Development Project</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card placeholder-card">
-                    <div class="project-number">05</div>
-                    <div class="project-image">
-                        <div class="placeholder-content">
-                            <span class="placeholder-icon">✨</span>
-                            <span class="coming-soon">Coming Soon</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Web Development Project</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -340,59 +237,149 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- 3D Work Section -->
+    <section id="3d-work" class="work">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Work Together</h2>
-                <p class="section-subtitle">Have a project in mind? Let's create something amazing.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Prešov, Slovakia</p>
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">3D Artwork</h2>
+            <p class="section-description">A showcase of my 3D modeling and visualization projects</p>
+            
+            <div class="work-grid">
+                <a href="https://www.artstation.com/artwork/3EDOaD" target="_blank" class="work-card">
+                    <div class="work-image">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/088/666/338/medium/viliam-balara-front-view-1.jpg?1748886997" alt="Concept Three-Wheeler" loading="lazy">
+                        <div class="work-overlay">
+                            <span>View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank" class="social-link linkedin">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                            <span>LinkedIn</span>
+                    <div class="work-info">
+                        <h3>Concept Three-Wheeler</h3>
+                        <span>Blender • Vehicle Design</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.artstation.com/artwork/5vZ3lA" target="_blank" class="work-card">
+                    <div class="work-image">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/065/398/619/medium/viliam-balara-img-20230622-185405-1.jpg?1690282117" alt="Raven Skull" loading="lazy">
+                        <div class="work-overlay">
+                            <span>View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Raven Skull</h3>
+                        <span>3ds Max • 3D Print</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.artstation.com/artwork/xDeXbR" target="_blank" class="work-card">
+                    <div class="work-image">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/065/402/925/medium/viliam-balara-render-1.jpg?1690290073" alt="Spiderbot" loading="lazy">
+                        <div class="work-overlay">
+                            <span>View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Spiderbot</h3>
+                        <span>Substance Painter • Mecha</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.artstation.com/artwork/Poe4Yr" target="_blank" class="work-card">
+                    <div class="work-image">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/028/496/984/medium/viliam-balara-04.jpg?1594657467" alt="Walther PPK" loading="lazy">
+                        <div class="work-overlay">
+                            <span>View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Walther PPK</h3>
+                        <span>3ds Max • Weapon</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.artstation.com/artwork/8l9qDw" target="_blank" class="work-card">
+                    <div class="work-image">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/026/217/903/medium/viliam-balara-01.jpg?1588193406" alt="AKM Assault Rifle" loading="lazy">
+                        <div class="work-overlay">
+                            <span>View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>AKM Assault Rifle</h3>
+                        <span>3ds Max • Weapon</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.artstation.com/artwork/Q6mod" target="_blank" class="work-card">
+                    <div class="work-image">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/007/007/598/medium/viliam-balara-vespa-5.jpg?1502974385" alt="1960's Scooter" loading="lazy">
+                        <div class="work-overlay">
+                            <span>View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>1960's Scooter</h3>
+                        <span>Fusion 360 • Vehicle</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="work-cta">
+                <a href="https://www.artstation.com/vilo34" target="_blank" class="btn btn-outline">
+                    <span>View All on ArtStation</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-label">Contact</div>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p>Interested in working together or have a question? Feel free to reach out!</p>
+                    
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank" class="contact-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div>
+                                <span class="link-label">LinkedIn</span>
+                                <span class="link-value">linkedin.com/in/viliam-balara</span>
+                            </div>
                         </a>
-                        <a href="https://www.artstation.com/vilo34" target="_blank" class="social-link artstation">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M0 17.723l2.027 3.505h.001a2.424 2.424 0 0 0 2.164 1.333h13.457l-2.792-4.838H0zm24 .025c0-.484-.143-.935-.388-1.314L15.728 2.728a2.424 2.424 0 0 0-2.142-1.289H9.419L21.598 22.54l1.92-3.325c.378-.637.482-.919.482-1.467zm-11.129-3.462L7.428 4.858l-5.444 9.428h10.887z"/>
-                            </svg>
-                            <span>ArtStation</span>
+                        <a href="https://www.artstation.com/vilo34" target="_blank" class="contact-link">
+                            <i class="fa-brands fa-artstation"></i>
+                            <div>
+                                <span class="link-label">ArtStation</span>
+                                <span class="link-value">artstation.com/vilo34</span>
+                            </div>
                         </a>
+                        <div class="contact-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span class="link-label">Location</span>
+                                <span class="link-value">Prešov, Slovakia</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
-                        <span class="focus-border"></span>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
-                        <span class="focus-border"></span>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
-                        <span class="focus-border"></span>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-submit">
+                    <button type="submit" class="btn btn-primary btn-full">
                         <span>Send Message</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-                        </svg>
+                        <i class="fa-solid fa-paper-plane"></i>
                     </button>
                 </form>
             </div>
@@ -403,11 +390,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">VB</div>
-                <p>&copy; 2026 Viliam Balara. All rights reserved.</p>
+                <a href="#" class="footer-logo">VB<span>.</span></a>
+                <p>© 2026 Viliam Balara. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank">LinkedIn</a>
-                    <a href="https://www.artstation.com/vilo34" target="_blank">ArtStation</a>
+                    <a href="https://www.linkedin.com/in/viliam-balara/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.artstation.com/vilo34" target="_blank"><i class="fa-brands fa-artstation"></i></a>
                 </div>
             </div>
         </div>
